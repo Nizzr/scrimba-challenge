@@ -1,0 +1,119 @@
+#cat {
+	height: 150px;
+	position: absolute;
+	z-index: 10;
+	top: 300px;
+	left: 10vw;
+}
+#bowl {
+	height: 150px;
+	position: absolute;
+	right: 10vw;
+	top: 300px;
+}
+
+.container {
+	height: 600px;
+	width: 100vw;
+	position: relative;
+}
+
+#count-down {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	/* background-color: rgb(168, 219, 219); */
+	height: 100px;
+	width: 84px;
+	overflow: hidden;
+}
+.numbers {
+	position: relative;
+	right: 894px;
+}
+
+.control-buttons {
+	border: 3px solid #2a2a57;
+	/* font-size: 26px; */
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background-color: rgb(233, 227, 238);
+	cursor: pointer;
+	width: fit-content;
+	position: absolute;
+	bottom: 180px;
+}
+
+.control-buttons:hover {
+	opacity: 0.96;
+}
+.speed:hover {
+	opacity: 0.96;
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.speed {
+	height: 24px;
+	margin: 0 30px 50px 30px;
+	cursor: pointer;
+	background-color: rgb(233, 227, 238);
+	padding: 8px;
+	border: 2px solid #2a2a57;
+	border-radius: 10px;
+}
+
+.speed:active,
+.control-buttons img:active {
+	opacity: 0.8;
+}
+
+.speeds {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+body {
+	background-image: url("https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/becdd8955dc57eb.png");
+	background-position: 900px;
+}
+
+.clicked {
+	box-shadow: rgba(46, 98, 240, 0.4) 5px 5px, rgba(46, 82, 240, 0.3) 5px 5px,
+		rgba(46, 59, 240, 0.2) 10px 10px, rgba(98, 46, 240, 0.1) 15px 15px,
+		rgba(46, 82, 240, 0.05) 20px 20px;
+}
+
+.message-container {
+	background-color: rgb(247, 231, 10);
+	position: absolute;
+	bottom: 110px;
+	border: 2px solid #2a2a57;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.slow,
+.normal,
+.fast {
+	height: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.control-buttons img {
+		height: 30px;
+	}
+	.control-buttons {
+		margin-bottom: -25px;
+	}
+}
