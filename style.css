@@ -64,6 +64,7 @@ body {
 	align-items: center;
 	height: 92vh;
 	width: 95vw;
+	overflow: hidden;
 }
 
 .speed {
